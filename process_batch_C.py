@@ -31,7 +31,7 @@ OUTPUT_FILE_NAME = "batchfile_3_farenheit.csv"
 
 # Define program functions (bits of reusable code)
 # Use docstrings - and indentation matters!
-
+## ERIN SWAN-SIEGEL
 
 def convert_k_to_f(temp_k):
     """ Convert Kelvin to Farenheit.
@@ -40,7 +40,7 @@ def convert_k_to_f(temp_k):
     All CSV values are read as strings
     """
     logging.debug(f"Calling convert_k_to_f() with {temp_k}.")
-    farenheit = round(float(temp_k) - 273.15 * 9.0 / 5.0 + 32, 2)
+    farenheit = round((float(temp_k) - 273.15 )* 9.0 / 5.0 + 32, 2)
     logging.debug(f"Converted {temp_k}K to {farenheit}F.")
     return farenheit
 
